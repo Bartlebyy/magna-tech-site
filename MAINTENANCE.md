@@ -9,10 +9,11 @@ about a minute, with no manual "deploy" step required.
 
 ## 2. Where things live
 
-- **Code repository:** _add your GitHub URL here once the repo is created_
-- **Netlify project:** _add your Netlify project name / URL here once connected_
-- **Live site:** https://magna-tech.com (once DNS is pointed at Netlify)
-- **Preview site:** Netlify gives you a `*.netlify.app` preview URL before you connect the real domain — use this to review changes before they go live.
+- **Code repository:** https://github.com/Bartlebyy/magna-tech-site
+- **Netlify project:** magna-tech-site — https://app.netlify.com/projects/magna-tech-site
+- **Live site (Netlify subdomain):** https://magna-tech-site.netlify.app — this is live production; every push to `main` auto-deploys here within about a minute.
+- **Live site (real domain):** https://magna-tech.com — not yet pointed at Netlify. Point DNS here when ready to cut over (see Known follow-ups).
+- **Preview URLs:** any manual `netlify deploy` (without `--prod`) or pull-request build gets its own `*.netlify.app` preview URL — use this to review changes before they reach production.
 
 ## 3. The easiest way to make a change: ask an AI coding assistant
 
@@ -51,25 +52,32 @@ from drifting into two different versions again, the way it did on the old site.
 
 ## 6. Photos
 
-Real photos are now wired into the site under `src/img/`:
-
 | Photo | Used on |
 |---|---|
-| Award certificates (7) | `/about/awards/` |
+| Award certificates & plaques (7) | `/about/awards/` — each paired with its own citation, click to enlarge |
 | Steven Krams portrait | `/about/about-mte/` |
-| Cinema auditorium | `/solutions/cinemas/` |
-| Planetarium dome | `/solutions/planetariums/` |
-| Drive-in screen | `/solutions/outdoor-cinemas/` |
-| Services / Consulting banners | `/services/` and `/services/consulting/` |
-| Vintage equipment banner | `/vintage-equipment/` |
-| Outlet/catalog banner | `/products/` |
+| Cinema auditorium (cropped from a before/after pair) | `/solutions/cinemas/` |
+| Planetarium dome (cropped from a before/after pair) | `/solutions/planetariums/` |
+| Drive-in illustrated sign | `/solutions/outdoor-cinemas/` |
+| Services hero (cropped from a before/after pair) | `/services/` |
 | Team/event photo | `/portfolio/` |
+| Film projector (Unsplash, free license) | Homepage hero |
+| MTE logo mark | Header, footer, favicon, Organization schema |
+
+**No real MTE project photography exists for Cinemas, Planetariums, or the Drive-In
+page.** The images currently there are the best available placeholders — two are cropped
+from old "before/after" comparison composites (not full-resolution to start with), and
+the drive-in page uses a generic illustrated sign rather than a real installation photo.
+**This is the single highest-value thing to fix before launch:** swap in genuine photos
+of MTE-installed spaces as they become available. See `src/_data/solutions.json` and
+`src/_data/services.json` for the `image` / `imageAlt` fields to update.
 
 **Not used, sitting in `src/img/extra/` for you to place:** about a dozen files
 (`page1_1-new.jpg`, the `ton_3_spr`/`ton_4_spr` variants, `3.jpg`, `960x0.jpg`,
 `untitled-1.jpg`, `untitled-2.png`, and the old `electronic-booth-ver-2.png` ON-LINE BOOTH
-graphic) that came in the same batch but didn't have an obvious home. Tell us which page
-each belongs to and we'll wire it in.
+graphic) that came in the same batch but didn't have an obvious home. Note: `960x0.jpg` is
+a stock photo of a *different* company's drive-in venue (EVX) — don't use it as if it were
+MTE's work. Tell us which of the rest belongs where and we'll wire it in.
 
 **Deliberately excluded, not copied into the project:** six files that read as third-party
 press/studio material rather than MTE's own photography — two "Tenet" (2020,
@@ -78,12 +86,12 @@ COVID-era cinema-reopening news photos (Korea, China, and the Egyptian Theatre/N
 If you hold an actual license for any of these, say so and we'll add them back; otherwise
 leave them out of a rebuilt commercial site.
 
-**Still no photo:** most Solutions pages (Corporate, Cruise Ships, Educational Facilities,
-Government & Military, Houses of Worship, Control Rooms, Entertainment, Health Care,
-Shopping Malls, Sport Venues, Performing Arts Theaters, Museums) and most Services pages
-still render with no image. Add files to `src/img/solutions/` or `src/img/services/` and
-reference them from the matching entry in `solutions.json` / `services.json` (see the
-`image` / `imageAlt` fields already used on Cinemas, Planetariums, etc. for the pattern).
+**Still no photo:** the merged `/solutions/commercial-and-institutional-av/` page and most
+Services pages (Installation & Support, Rental Services, Custom Design & Manufacturing,
+Consulting, Design & Acoustics) render with no image. Add files to `src/img/solutions/` or
+`src/img/services/` and reference them from the matching entry in `solutions.json` /
+`services.json` (see the `image` / `imageAlt` fields already used on Cinemas, Planetariums,
+etc. for the pattern).
 
 ## 7. Where form submissions go
 
@@ -97,25 +105,47 @@ the decision log).
 
 ## Known follow-ups before this goes live
 
-These are called out here so they don't get lost between this file and the decision log:
+Ranked roughly by how much it matters before this is treated as launch-ready.
 
-- **Academy Award year/citation (D-014):** the Awards page content was reconstructed from
-  a secondary database and cross-checked against a second source, not verified directly
-  against oscars.org. Do that check before publishing.
-- **Offices & agents (Q-03):** most entries on the Offices & Agents page are carried over
-  unverified — confirm which are still active.
-- **Terms of Sale (D-file):** carried over from the current site almost as-is; worth a
-  legal read-through, especially the collections/returns language, and confirm the
-  Doral, FL FOB point still matches how you actually ship.
-- **Portfolio (Q-05):** the current site lists 200+ projects, heavily weighted toward
-  Russian regional cinemas. This rebuild uses a curated sample of ~20 — confirm which
-  named clients (studios, museums, government bodies) you're comfortable listing publicly,
-  and let us know if you want the full list republished instead.
-- **Placeholder solution pages:** several `/solutions/[venue]/` pages (marked in
-  `solutions.json` with `"hasRealCopy": false`) have short, generic copy pending real
-  project detail. They render fine but read thin — flesh them out as projects come in.
-- **Images:** real photos are now wired in — see section 6 above for what's placed,
-  what's unplaced in `src/img/extra/`, and what was deliberately excluded as third-party
-  content. Several Solutions/Services pages still have no photo at all.
-- **Form routing:** confirm `digital@myiceco.com` (or whichever inbox you choose) is set
-  up to receive Netlify Forms notifications before launch.
+### Content that needs verification or real assets
+
+- **Real project photography (highest priority).** No genuine MTE installation photos
+  exist for Cinemas, Planetariums, or the Drive-In page — see section 6 above for exactly
+  what's standing in for them. Everything else on the site can be polished, but this is
+  the one gap that actually undercuts credibility with a visitor.
+- **Academy Award dates (1974, 1990).** These two citations on `/about/awards/` were
+  reconstructed from a third-party Oscar-nominations database and a German-language
+  Wikipedia article, cross-checked against each other — not verified directly against
+  oscars.org. The page currently presents them with full confidence and no caveat; do the
+  oscars.org check before treating them as settled fact.
+- **Transcribed award/plaque text.** The Kodak and ASC recognition citations on the Awards
+  page were transcribed by reading the certificate photos directly (fine print on a couple
+  of them is small) — worth a proofread against the physical originals.
+- **Offices & agents.** Most entries on the Offices & Agents page are carried over from the
+  old site unverified — confirm which are still active before publishing.
+- **Terms of Sale.** Carried over from the current site almost as-is; worth a legal
+  read-through, especially the collections/returns language, and confirm the Doral, FL FOB
+  point still matches how you actually ship.
+- **Portfolio.** The current site lists 200+ projects, heavily weighted toward Russian
+  regional cinemas. This rebuild uses a curated sample of ~20 — confirm which named clients
+  (studios, museums, government bodies) you're comfortable listing publicly, and say if you
+  want the full list republished instead.
+- **Placeholder solution pages.** A few `/solutions/[venue]/` pages (marked in
+  `solutions.json` with `"hasRealCopy": false`) still have short, generic copy pending real
+  project detail. They render fine but read thin.
+
+### Before DNS cutover
+
+- **Point magna-tech.com at Netlify.** The site is live and auto-deploying at
+  https://magna-tech-site.netlify.app, but the real domain isn't connected yet.
+- **Form routing.** Confirm `digital@myiceco.com` (or whichever inbox you choose) is set up
+  to receive Netlify Forms notifications — check in the Netlify dashboard under
+  **Forms → Notifications**.
+- **Google Search Console / sitemap resubmission** once the real domain is live.
+
+### Smaller open items
+
+- A handful of unplaced photos sit in `src/img/extra/` waiting on direction — see section 6.
+- Several Services pages (Installation & Support, Rental Services, Custom Design &
+  Manufacturing, Consulting, Design & Acoustics) and the merged
+  `/solutions/commercial-and-institutional-av/` page have no photo at all.

@@ -15,8 +15,13 @@ permalink: "/about/awards/"
 <section class="block">
   <div class="wrap">
 
+    <div class="stat-row" style="margin-top:0;">
+      <div class="stat"><span class="num">2</span><span class="label">Academy Sci/Tech Awards</span></div>
+      <div class="stat"><span class="num">1991</span><span class="label">Academy Certificate of Appreciation</span></div>
+      <div class="stat"><span class="num">70+</span><span class="label">Years supporting the motion picture industry</span></div>
+    </div>
+
     <h2>Academy Scientific/Technical Awards</h2>
-    <p class="text-muted">{{ awards.companyAwards.note }}</p>
     <div class="award-list">
       {% for c in awards.companyAwards.citations %}
       <div class="award-item">
@@ -25,7 +30,12 @@ permalink: "/about/awards/"
           <img src="{{ c.image }}" alt="{{ c.imageAlt }}" loading="lazy" class="award-thumb">
         </a>
         {% else %}
-        <div class="award-thumb award-thumb--none" aria-hidden="true">No photo on file</div>
+        <div class="award-thumb award-thumb--none" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M8.5 3l-1 2h-3a1.5 1.5 0 0 0-1.5 1.5v11A1.5 1.5 0 0 0 4.5 19h15a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 19.5 5h-3l-1-2h-7z"/>
+            <circle cx="12" cy="12" r="3.5"/>
+          </svg>
+        </div>
         {% endif %}
         <div class="award-detail">
           <span class="badge">{{ c.year }}</span>
@@ -48,7 +58,6 @@ permalink: "/about/awards/"
     </div>
 
     <h2>Academy Certificate of Appreciation</h2>
-    <p class="text-muted">{{ awards.companyAppreciation.note }}</p>
     <div class="award-list">
       {% for c in awards.companyAppreciation.entries %}
       <div class="award-item">
@@ -73,8 +82,7 @@ permalink: "/about/awards/"
       {% endfor %}
     </div>
 
-    <h2>Related Awards to Company Founders</h2>
-    <p class="text-muted">{{ awards.relatedIndividualAwards.note }}</p>
+    <h2>Honoring Our Founders</h2>
     <div class="award-list">
       {% for e in awards.relatedIndividualAwards.entries %}
       <div class="award-item">
@@ -99,8 +107,7 @@ permalink: "/about/awards/"
       {% endfor %}
     </div>
 
-    <h2>Affiliated Company Recognitions</h2>
-    <p class="text-muted">{{ awards.affiliateAwards.note }}</p>
+    <h2>Continental Film &amp; Digital Labs</h2>
     <div class="award-list">
       {% for e in awards.affiliateAwards.entries %}
       <div class="award-item">
@@ -125,9 +132,5 @@ permalink: "/about/awards/"
       {% endfor %}
     </div>
 
-    <p class="text-muted" style="margin-top:2rem; font-size: 0.85rem;">
-      If you have the original certificates or photographs for the items above, we’d rather cite those directly — send them to
-      <a href="mailto:{{ company.email }}">{{ company.email }}</a>.
-    </p>
   </div>
 </section>

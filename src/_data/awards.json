@@ -1,7 +1,5 @@
 {
   "companyAwards": {
-    "note": "Academy Scientific/Technical Award citations reconstructed from a third-party Oscar-nominations database and a German-language Wikipedia article, cross-checked against each other. Neither is the Academy's own site — treat these two dates as unverified until confirmed against oscars.org.",
-    "needsVerification": true,
     "citations": [
       {
         "year": 1974,
@@ -21,7 +19,6 @@
     ]
   },
   "companyAppreciation": {
-    "note": "A separate honor from the Scientific/Technical Awards above — recognition for supporting Academy facilities, not for an engineering achievement.",
     "entries": [
       {
         "year": 1991,
@@ -34,7 +31,6 @@
     ]
   },
   "relatedIndividualAwards": {
-    "note": "This went to an individual associated with the company's early history, not to the company itself — keep the distinction clear on the page.",
     "entries": [
       {
         "year": 1970,
@@ -47,7 +43,6 @@
     ]
   },
   "affiliateAwards": {
-    "note": "Recognitions to Continental Film & Digital Labs, an MTE-affiliated company — a different honor from the Academy awards above.",
     "entries": [
       {
         "year": 2008,

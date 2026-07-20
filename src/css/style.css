@@ -210,10 +210,14 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   .hero-photo { display: block; }
 }
 
-.hero-stats { background: rgba(0, 0, 0, 0.18); border-top: 1px solid rgba(255, 255, 255, 0.12); }
-.hero-stats .stat-row { margin: 0; padding-top: 1.6rem; padding-bottom: 1.6rem; }
+.hero-stats { background: #17140f; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.hero-stats .stat-row { margin: 0; padding-top: 1.6rem; padding-bottom: 1.6rem; gap: 3rem; }
 .hero-stats .stat .num { color: var(--brass); }
 .hero-stats .stat .label { color: #cfc7b8; }
+@media (min-width: 640px) {
+  .hero-stats .stat-row { justify-content: space-between; }
+  .hero-stats .stat { min-width: 0; flex: 0 0 auto; }
+}
 
 /* ---- Buttons ---- */
 .btn {

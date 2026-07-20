@@ -86,6 +86,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
 .sprocket-rule {
   height: 22px;
   margin: 3rem 0;
+  background-color: var(--ink);
   background-image:
     radial-gradient(circle 5px, var(--paper) 5px, transparent 5.5px);
   background-repeat: repeat-x;
@@ -95,9 +96,10 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   border-bottom: 3px solid var(--ink);
 }
 .sprocket-rule--light {
+  background-color: var(--booth);
   border-top-color: var(--booth-line);
   border-bottom-color: var(--booth-line);
-  background-image: radial-gradient(circle 5px, var(--booth) 5px, transparent 5.5px);
+  background-image: radial-gradient(circle 5px, var(--paper) 5px, transparent 5.5px);
 }
 
 /* ---- Header ---- */

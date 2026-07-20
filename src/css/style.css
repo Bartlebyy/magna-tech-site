@@ -232,16 +232,20 @@ section.block { padding: 3rem 0; }
 .stat .label { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
 
 /* ---- Page/hero photos ----
-   Source photos vary in shape (some are single landscape shots, some are
-   stacked before/after composites), so these show the image intact at its
-   natural aspect ratio rather than cropping to a fixed box. */
+   Source images vary in native aspect ratio and resolution, so these keep
+   their own shape (no forced aspect-ratio/object-fit crop, which has twice
+   now clipped meaningful content at the edges) and are just capped by
+   height and a max-width so a low-resolution source isn't stretched
+   past its native size. A fixed pixel height (not width:auto) keeps the
+   box reservable before the image loads, so lazy-loading still works. */
 .page-photo {
-  display: block; width: auto; max-width: 100%; max-height: 420px;
-  margin: 0 auto 2rem; border-top: 4px solid var(--red);
+  width: 100%; max-width: 800px; height: 420px; object-fit: contain;
+  display: block; margin: 0 auto 2rem; border-top: 4px solid var(--red);
+  background: var(--paper-dim);
 }
 .banner-photo {
-  display: block; width: auto; max-width: 100%; max-height: 240px;
-  margin: 0 auto 1.5rem;
+  width: 100%; max-width: 480px; aspect-ratio: 16 / 9; object-fit: cover;
+  display: block; margin-bottom: 1.5rem;
 }
 .portrait-figure { float: left; margin: 0 1.5rem 1rem 0; }
 .portrait-photo {

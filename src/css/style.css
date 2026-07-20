@@ -215,7 +215,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
 .hero-stats .stat .num { color: var(--brass); }
 .hero-stats .stat .label { color: #cfc7b8; }
 @media (min-width: 640px) {
-  .hero-stats .stat-row { justify-content: space-between; }
+  .hero-stats .stat-row { justify-content: center; }
   .hero-stats .stat { min-width: 0; flex: 0 0 auto; }
 }
 

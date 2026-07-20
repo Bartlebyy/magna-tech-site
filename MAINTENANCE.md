@@ -97,9 +97,9 @@ etc. for the pattern).
 
 Contact and partner-application form submissions arrive through Netlify Forms. In your
 Netlify project dashboard, go to **Forms** to see submissions, and **Forms → Notifications**
-to set up an email alert. Point that notification at whichever inbox should receive them
-— confirm `digital@myiceco.com` is still monitored before launch (open question Q-01 in
-the decision log).
+to set up an email alert. Point that notification at **sales@myiceco.com** — confirmed as
+the correct inbox (Q-01 in the decision log, resolved). `company.json` and `offices.json`
+already use this address.
 
 ---
 
@@ -113,23 +113,31 @@ Ranked roughly by how much it matters before this is treated as launch-ready.
   exist for Cinemas, Planetariums, or the Drive-In page — see section 6 above for exactly
   what's standing in for them. Everything else on the site can be polished, but this is
   the one gap that actually undercuts credibility with a visitor.
-- **Academy Award dates (1974, 1990).** These two citations on `/about/awards/` were
-  reconstructed from a third-party Oscar-nominations database and a German-language
-  Wikipedia article, cross-checked against each other — not verified directly against
-  oscars.org. The page currently presents them with full confidence and no caveat; do the
-  oscars.org check before treating them as settled fact.
+- **Academy Award dates (1974, 1990) — client is checking (D-014, Q-02).** These two
+  citations on `/about/awards/` were reconstructed from a third-party Oscar-nominations
+  database and a German-language Wikipedia article, cross-checked against each other — not
+  verified directly against oscars.org. The page currently presents them with full
+  confidence and no caveat. Awaiting the client's confirmation of the correct year/citation
+  before treating them as settled fact.
 - **Transcribed award/plaque text.** The Kodak and ASC recognition citations on the Awards
   page were transcribed by reading the certificate photos directly (fine print on a couple
   of them is small) — worth a proofread against the physical originals.
-- **Offices & agents.** Most entries on the Offices & Agents page are carried over from the
-  old site unverified — confirm which are still active before publishing.
+- **Offices & agents — client is sending updated info (Q-03).** Most entries on the Offices
+  & Agents page are carried over from the old site unverified. Update `offices.json` once
+  the client's list arrives.
 - **Terms of Sale.** Carried over from the current site almost as-is; worth a legal
   read-through, especially the collections/returns language, and confirm the Doral, FL FOB
   point still matches how you actually ship.
-- **Portfolio.** The current site lists 200+ projects, heavily weighted toward Russian
-  regional cinemas. This rebuild uses a curated sample of ~20 — confirm which named clients
-  (studios, museums, government bodies) you're comfortable listing publicly, and say if you
-  want the full list republished instead.
+- **Portfolio / studio client list — client is checking (Q-05).** The current site lists
+  200+ projects, heavily weighted toward Russian regional cinemas. This rebuild uses a
+  curated sample of ~20 — client is reviewing which named clients (studios, museums,
+  government bodies) they're comfortable listing publicly. Update `portfolio.json` once
+  confirmed.
+- **Vintage equipment site — client has an existing, unpublished site for this (D-012).**
+  The client mentioned a separate, not-yet-live website dedicated to classic/vintage cinema
+  equipment. `/vintage-equipment/` on this site currently just points to the eBay store —
+  worth a follow-up conversation about how the two properties should relate (link out,
+  merge content, or redirect) once that site is ready.
 - **Placeholder solution pages.** A few `/solutions/[venue]/` pages (marked in
   `solutions.json` with `"hasRealCopy": false`) still have short, generic copy pending real
   project detail. They render fine but read thin.
@@ -138,9 +146,9 @@ Ranked roughly by how much it matters before this is treated as launch-ready.
 
 - **Point magna-tech.com at Netlify.** The site is live and auto-deploying at
   https://magna-tech-site.netlify.app, but the real domain isn't connected yet.
-- **Form routing.** Confirm `digital@myiceco.com` (or whichever inbox you choose) is set up
-  to receive Netlify Forms notifications — check in the Netlify dashboard under
-  **Forms → Notifications**.
+- **Form routing.** Set the Netlify Forms notification email to **sales@myiceco.com** —
+  check in the Netlify dashboard under **Forms → Notifications**. (The form's own
+  destination address in the site data is already updated to this.)
 - **Google Search Console / sitemap resubmission** once the real domain is live.
 
 ### Smaller open items

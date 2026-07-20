@@ -231,22 +231,25 @@ section.block { padding: 3rem 0; }
 .stat .num { font-family: var(--font-display); font-size: 2.2rem; color: var(--red); display: block; }
 .stat .label { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
 
-/* ---- Page/hero photos ---- */
+/* ---- Page/hero photos ----
+   Source photos vary in shape (some are single landscape shots, some are
+   stacked before/after composites), so these show the image intact at its
+   natural aspect ratio rather than cropping to a fixed box. */
 .page-photo {
-  width: 100%; aspect-ratio: 16 / 9; max-height: 420px; object-fit: cover;
-  border-top: 4px solid var(--red); margin-bottom: 2rem;
+  display: block; width: auto; max-width: 100%; max-height: 420px;
+  margin: 0 auto 2rem; border-top: 4px solid var(--red);
 }
 .banner-photo {
-  width: 100%; max-width: 480px; aspect-ratio: 16 / 9; object-fit: cover;
-  display: block; margin-bottom: 1.5rem;
+  display: block; width: auto; max-width: 100%; max-height: 240px;
+  margin: 0 auto 1.5rem;
 }
 .portrait-photo {
   width: 160px; height: 160px; object-fit: cover; border-radius: 3px;
   border: 3px solid var(--brass); float: left; margin: 0 1.5rem 1rem 0;
 }
 .team-photo {
-  width: 100%; max-width: 640px; aspect-ratio: 16 / 10; object-fit: cover;
-  border: 1px solid #ddd4bf; margin-bottom: 1.5rem;
+  display: block; width: auto; max-width: 100%; max-height: 480px;
+  margin: 0 auto 1.5rem; border: 1px solid #ddd4bf;
 }
 
 /* ---- Breadcrumbs ---- */

@@ -18,42 +18,6 @@
     ]
   },
   {
-    "slug": "architectural-design",
-    "title": "Architectural Design",
-    "metaDescription": "Cinema and theater architectural design services, from concept through construction documents.",
-    "dek": "Theatrical and cinema architectural design, from concept to construction documents.",
-    "body": [
-      "MTE's design team works on theatrical design and sourcing for new cinemas and AV spaces \u2014 from concept and technology planning through the documentation a contractor needs to build."
-    ]
-  },
-  {
-    "slug": "postproduction-and-lab",
-    "title": "Film & Video Post-Production and Lab Services",
-    "metaDescription": "Film and digital post-production, color correction, and transfer services via Continental Film & Digital Labs.",
-    "dek": "Film and digital post-production, via Magna-Tech's affiliated lab.",
-    "body": [
-      "Continental Film & Digital Labs, an MTE-affiliated company, operates a film laboratory and digital imaging facility handling color correction and transfer of film and digital images, including HD and 3D formats."
-    ]
-  },
-  {
-    "slug": "3d-animation-visual",
-    "title": "3D Animation & Visual Effects",
-    "metaDescription": "3D animation and visual effects services for motion picture and commercial production.",
-    "dek": "3D animation and visual effects support for production work.",
-    "body": [
-      "MTE offers 3D animation and visual effects services in support of motion picture and commercial production work."
-    ]
-  },
-  {
-    "slug": "audio-consulting-acoustical-design",
-    "title": "Audio Consulting & Acoustical Design",
-    "metaDescription": "Acoustical design and sound system consulting for cinemas, theaters, and AV spaces.",
-    "dek": "Acoustical design and sound-system consulting for new and renovated spaces.",
-    "body": [
-      "MTE provides acoustical design \u2014 including sound insulation calculations and sketch-level acoustic design \u2014 and sound-system consulting for cinema halls, theaters, and other AV spaces."
-    ]
-  },
-  {
     "slug": "custom-design-manufacturing",
     "title": "Custom Design & Manufacturing",
     "metaDescription": "Custom equipment design and manufacturing for cinema and AV applications.",
@@ -69,8 +33,6 @@
     "dek": "Independent consulting on system design, equipment selection, and project planning.",
     "body": [
       "As an independent systems integrator, MTE consults on system design, equipment selection, and project planning for cinema, AV, and planetarium projects at any stage."
-    ],
-    "image": "/img/banners/consulting-banner.jpg",
-    "imageAlt": "Magna-Tech consulting services"
+    ]
   }
 ]

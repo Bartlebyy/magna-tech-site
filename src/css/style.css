@@ -233,18 +233,20 @@ section.block { padding: 3rem 0; }
 
 /* ---- Page/hero photos ---- */
 .page-photo {
-  width: 100%; max-height: 420px; object-fit: cover;
+  width: 100%; aspect-ratio: 16 / 9; max-height: 420px; object-fit: cover;
   border-top: 4px solid var(--red); margin-bottom: 2rem;
 }
 .banner-photo {
-  width: 100%; max-width: 480px; display: block; margin-bottom: 1.5rem;
+  width: 100%; max-width: 480px; aspect-ratio: 16 / 9; object-fit: cover;
+  display: block; margin-bottom: 1.5rem;
 }
 .portrait-photo {
   width: 160px; height: 160px; object-fit: cover; border-radius: 3px;
   border: 3px solid var(--brass); float: left; margin: 0 1.5rem 1rem 0;
 }
 .team-photo {
-  width: 100%; max-width: 640px; border: 1px solid #ddd4bf; margin-bottom: 1.5rem;
+  width: 100%; max-width: 640px; aspect-ratio: 16 / 10; object-fit: cover;
+  border: 1px solid #ddd4bf; margin-bottom: 1.5rem;
 }
 
 /* ---- Breadcrumbs ---- */

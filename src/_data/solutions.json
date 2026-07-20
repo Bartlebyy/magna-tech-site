@@ -26,16 +26,6 @@
     "imageAlt": "Drive-in cinema screen at dusk"
   },
   {
-    "slug": "corporate",
-    "title": "Corporate",
-    "metaDescription": "AV systems for corporate boardrooms, conference centers, and briefing rooms.",
-    "dek": "Presentation and conferencing systems for corporate spaces.",
-    "body": [
-      "MTE designs and installs AV systems for boardrooms, conference centers, and briefing rooms \u2014 video conferencing, presentation displays, and control systems that a non-technical staff member can run day to day."
-    ],
-    "hasRealCopy": false
-  },
-  {
     "slug": "cruise-ships",
     "title": "Cruise Ships",
     "metaDescription": "Cinema and AV equipment sized and specified for shipboard installation.",
@@ -76,16 +66,6 @@
     "hasRealCopy": false
   },
   {
-    "slug": "control-rooms",
-    "title": "Control Rooms",
-    "metaDescription": "Control room and monitoring AV systems for broadcast, security, and operations centers.",
-    "dek": "Multi-source display and control systems for operations and monitoring centers.",
-    "body": [
-      "For control rooms and operations centers, MTE specifies video wall, multi-source switching, and control systems designed for reliability and long operating hours."
-    ],
-    "hasRealCopy": false
-  },
-  {
     "slug": "planetariums",
     "title": "Planetariums",
     "metaDescription": "Digital planetarium projection systems for museums, science centers, and universities.",
@@ -96,46 +76,6 @@
     "hasRealCopy": true,
     "image": "/img/solutions/planetarium-hero.jpg",
     "imageAlt": "Planetarium dome interior with digital projection"
-  },
-  {
-    "slug": "entertainment",
-    "title": "Entertainment",
-    "metaDescription": "AV and projection systems for entertainment venues, visitor centers, and attractions.",
-    "dek": "Projection and AV systems for visitor centers, attractions, and entertainment venues.",
-    "body": [
-      "MTE has equipped visitor centers, museums, and entertainment venues with everything from single-screen projection to synchronized multi-projector and 4K stacked systems."
-    ],
-    "hasRealCopy": false
-  },
-  {
-    "slug": "healthcare",
-    "title": "Health Care",
-    "metaDescription": "AV systems for hospital auditoriums, training rooms, and patient-facing displays.",
-    "dek": "Presentation and training-room AV systems for healthcare facilities.",
-    "body": [
-      "MTE supplies AV systems for hospital and healthcare-facility auditoriums, training rooms, and patient-facing displays."
-    ],
-    "hasRealCopy": false
-  },
-  {
-    "slug": "shopping-malls",
-    "title": "Shopping Malls",
-    "metaDescription": "Digital signage and multimedia advertising systems for retail and shopping centers.",
-    "dek": "Digital signage and multimedia systems for retail environments.",
-    "body": [
-      "For shopping centers and retail environments, MTE designs internal and external multimedia advertising displays and digital signage systems."
-    ],
-    "hasRealCopy": false
-  },
-  {
-    "slug": "sport-venues",
-    "title": "Sport Venues",
-    "metaDescription": "Video display and sound systems for stadiums and sports arenas.",
-    "dek": "Video board and sound systems for stadiums and arenas.",
-    "body": [
-      "MTE has provided video display and sound systems for stadiums and sports arenas, sized to the venue and viewing distances."
-    ],
-    "hasRealCopy": false
   },
   {
     "slug": "performing-arts-theaters",

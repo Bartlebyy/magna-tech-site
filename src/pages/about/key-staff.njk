@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: "Key Staff"
+description: "Meet the Magna-Tech Electronic Co. team - designers, engineers, cinema operators, and technicians with decades of combined experience."
+permalink: "/about/key-staff/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/about/">About Us</a> / Key Staff</p>
+    <h1>Key Staff</h1>
+    <p class="dek">We are designers, engineers, cinema operators, film distributors, suppliers, and installers.</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <p>
+      Continental Film &amp; Digital Labs, our affiliated company, operates a film laboratory and
+      digital imaging facility handling daily color correction and transfer of film and digital
+      images in HD and 3D. We have also operated cinema venues directly, including the historic
+      City of Miami Tower Theatre and, currently, the Coral Gables Art Cinema.
+    </p>
+
+    <h2>Meet the Team</h2>
+    <div class="people-grid">
+      {% for person in staff %}
+      <div class="person">
+        <strong>{{ person.name }}</strong>
+        <div class="role">{{ person.role }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

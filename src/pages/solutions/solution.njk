@@ -1,0 +1,38 @@
+---
+layout: base.njk
+pagination:
+  data: solutions
+  size: 1
+  alias: item
+permalink: "/solutions/{{ item.slug }}/"
+eleventyComputed:
+  title: "{{ item.title }}"
+  description: "{{ item.metaDescription }}"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/solutions/">Solutions</a> / {{ item.title }}</p>
+    <h1>{{ item.title }}</h1>
+    <p class="dek">{{ item.dek }}</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    {% if item.image %}
+    <img src="{{ item.image }}" alt="{{ item.imageAlt or item.title }}" class="page-photo" loading="lazy">
+    {% endif %}
+    {% for para in item.body %}
+    <p>{{ para }}</p>
+    {% endfor %}
+
+    {% if not item.hasRealCopy %}
+    <p class="text-muted" style="font-size:0.85rem;">
+      This page is a short placeholder pending the content inventory (Phase 2a) — tell us about
+      real projects in this category and we’ll expand it.
+    </p>
+    {% endif %}
+
+    <p><a class="btn" href="/contact/">Ask About This</a></p>
+  </div>
+</section>

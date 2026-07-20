@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "installation-and-support",
+    "title": "Installation & Support",
+    "metaDescription": "Equipment installation, commissioning, and ongoing technical support for cinema and AV systems.",
+    "dek": "Installation, commissioning, and ongoing support for the systems we supply.",
+    "body": [
+      "MTE installs and commissions the systems it supplies, and provides ongoing technical support and maintenance afterward \u2014 the same team that speced the system is who you call when something needs attention."
+    ]
+  },
+  {
+    "slug": "rental-services",
+    "title": "Rental Services",
+    "metaDescription": "Short- and medium-term rental of digital and film cinema equipment.",
+    "dek": "Digital and film cinema equipment available for short- and medium-term rental.",
+    "body": [
+      "MTE maintains an inventory of digital (DCP) and analog (16/35/70mm) cinema equipment available for short- and medium-term rental \u2014 useful for festivals, pop-up screenings, and temporary installations."
+    ]
+  },
+  {
+    "slug": "architectural-design",
+    "title": "Architectural Design",
+    "metaDescription": "Cinema and theater architectural design services, from concept through construction documents.",
+    "dek": "Theatrical and cinema architectural design, from concept to construction documents.",
+    "body": [
+      "MTE's design team works on theatrical design and sourcing for new cinemas and AV spaces \u2014 from concept and technology planning through the documentation a contractor needs to build."
+    ]
+  },
+  {
+    "slug": "postproduction-and-lab",
+    "title": "Film & Video Post-Production and Lab Services",
+    "metaDescription": "Film and digital post-production, color correction, and transfer services via Continental Film & Digital Labs.",
+    "dek": "Film and digital post-production, via Magna-Tech's affiliated lab.",
+    "body": [
+      "Continental Film & Digital Labs, an MTE-affiliated company, operates a film laboratory and digital imaging facility handling color correction and transfer of film and digital images, including HD and 3D formats."
+    ]
+  },
+  {
+    "slug": "3d-animation-visual",
+    "title": "3D Animation & Visual Effects",
+    "metaDescription": "3D animation and visual effects services for motion picture and commercial production.",
+    "dek": "3D animation and visual effects support for production work.",
+    "body": [
+      "MTE offers 3D animation and visual effects services in support of motion picture and commercial production work."
+    ]
+  },
+  {
+    "slug": "audio-consulting-acoustical-design",
+    "title": "Audio Consulting & Acoustical Design",
+    "metaDescription": "Acoustical design and sound system consulting for cinemas, theaters, and AV spaces.",
+    "dek": "Acoustical design and sound-system consulting for new and renovated spaces.",
+    "body": [
+      "MTE provides acoustical design \u2014 including sound insulation calculations and sketch-level acoustic design \u2014 and sound-system consulting for cinema halls, theaters, and other AV spaces."
+    ]
+  },
+  {
+    "slug": "custom-design-manufacturing",
+    "title": "Custom Design & Manufacturing",
+    "metaDescription": "Custom equipment design and manufacturing for cinema and AV applications.",
+    "dek": "Custom equipment design and manufacturing for non-standard requirements.",
+    "body": [
+      "For requirements standard equipment doesn't cover, MTE's in-house machine shop and engineering staff design and manufacture custom components and systems."
+    ]
+  },
+  {
+    "slug": "consulting",
+    "title": "Consulting",
+    "metaDescription": "Independent consulting on cinema and AV system design, equipment selection, and project planning.",
+    "dek": "Independent consulting on system design, equipment selection, and project planning.",
+    "body": [
+      "As an independent systems integrator, MTE consults on system design, equipment selection, and project planning for cinema, AV, and planetarium projects at any stage."
+    ],
+    "image": "/img/banners/consulting-banner.jpg",
+    "imageAlt": "Magna-Tech consulting services"
+  }
+]

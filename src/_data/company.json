@@ -1,0 +1,40 @@
+{
+  "name": "Magna-Tech Electronic Co., Inc.",
+  "shortName": "Magna-Tech Electronic Co.",
+  "abbreviation": "MTE",
+  "founded": 1956,
+  "foundedCity": "New York City",
+  "owner": "Steven H. Krams",
+  "ownerSince": 1995,
+  "ownerTitle": "President & Chairman",
+  "address": {
+    "street": "8101 NW 33rd Street",
+    "city": "Doral",
+    "region": "FL",
+    "postalCode": "33122",
+    "country": "US",
+    "label": "Miami, FL (Headquarters)"
+  },
+  "phone": "+1-305-573-7339",
+  "phoneDisplay": "(305) 573-7339",
+  "email": "digital@myiceco.com",
+  "hours": "9:30am\u20135:30pm weekdays",
+  "domains": {
+    "primary": "https://magna-tech.com",
+    "store": "https://www.mteworld.com",
+    "vintage": "https://www.ebay.com/usr/kinemaman",
+    "partnerRu": "http://www.magna-tech.org"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/magnatechelectronic/",
+    "linkedin": "https://www.linkedin.com/company/magna-tech-electronic-co"
+  },
+  "gtmId": "GTM-MCFQJ7H",
+  "tagline": "Cinema & AV Equipment Since 1956",
+  "description": "Magna-Tech Electronic Co. designs, supplies, and installs cinema, audio-visual, and planetarium equipment for movie theaters, museums, government and educational facilities, and other venues worldwide.",
+  "history": "Magna-Tech was founded in New York City in 1956, producing sound recording equipment for motion picture studios. In 1995 the company was acquired by its current owner, Steven H. Krams, who continues as President and Chairman. Under his leadership, Magna-Tech merged in 1999 with International Cinema Equipment Company (ICEC), originally established in 1975, with both companies remaining under the same ownership.",
+  "awards": {
+    "summary": "Magna-Tech Electronic Co. has received two Scientific/Technical Academy Awards for engineering contributions to motion picture sound.",
+    "note": "Award years and citation text below are drawn from the Academy's own Scientific & Technical Awards records and cross-checked against a secondary source; verify against oscars.org before this page goes live, per internal decision D-014."
+  }
+}

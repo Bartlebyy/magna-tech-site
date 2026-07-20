@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: "Solutions by Venue"
+description: "Cinema and AV equipment and design services for every kind of venue - movie theaters, planetariums, government facilities, museums, and more."
+permalink: "/solutions/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Solutions</p>
+    <h1>Solutions by Venue</h1>
+    <p class="dek">Unique equipment and design considerations for each kind of space we work in.</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap grid">
+    {% for s in solutions %}
+    <div class="card">
+      <a class="card-link" href="/solutions/{{ s.slug }}/"><h3>{{ s.title }}</h3></a>
+      <p>{{ s.dek }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

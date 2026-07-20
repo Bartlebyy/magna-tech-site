@@ -1,0 +1,80 @@
+---
+layout: base.njk
+title: "Contact Us"
+description: "Contact Magna-Tech Electronic Co. at our Doral, FL headquarters, or reach one of our regional offices and agents worldwide."
+permalink: "/contact/"
+ogType: "website"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Contact Us</p>
+    <h1>Contact Us</h1>
+    <p class="dek">Let us follow up with you. Office hours are {{ company.hours }}.</p>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ company.name }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ company.address.street }}",
+    "addressLocality": "{{ company.address.city }}",
+    "addressRegion": "{{ company.address.region }}",
+    "postalCode": "{{ company.address.postalCode }}",
+    "addressCountry": "{{ company.address.country }}"
+  },
+  "telephone": "{{ company.phone }}",
+  "openingHours": "Mo-Fr 09:30-17:30"
+}
+</script>
+
+<section class="block">
+  <div class="wrap grid" style="grid-template-columns: 1.1fr 1fr;">
+    <div>
+      <h2>Send a Message</h2>
+      {% include "partials/contact-form.njk" %}
+    </div>
+    <div>
+      <h2>Headquarters</h2>
+      <p>
+        {{ company.name }}<br>
+        {{ company.address.street }}<br>
+        {{ company.address.city }}, {{ company.address.region }} {{ company.address.postalCode }} {{ company.address.country }}
+      </p>
+      <p>
+        Phone: <a href="tel:{{ company.phone }}">{{ company.phoneDisplay }}</a><br>
+        Email: <a href="mailto:{{ company.email }}">{{ company.email }}</a>
+      </p>
+      <iframe
+        title="Map to Magna-Tech Electronic Co. headquarters in Doral, FL"
+        src="https://www.google.com/maps?q={{ company.address.street }},+{{ company.address.city }}+{{ company.address.region }}+{{ company.address.postalCode }}&output=embed"
+        width="100%" height="280" style="border:1px solid #ddd4bf;" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="sprocket-rule" role="presentation"></div></div>
+
+<section class="block block--dim">
+  <div class="wrap">
+    <h2>Worldwide Offices &amp; Agents</h2>
+    <p class="text-muted">See the full directory on the <a href="/partnership/our-offices-and-agents/">Offices &amp; Agents</a> page.</p>
+    <div class="office-grid">
+      {% for office in offices.offices %}
+      {% if office.type == "office" %}
+      <div class="office-card">
+        <span class="kind">{{ office.type }}</span>
+        <h3>{{ office.name }}</h3>
+        {% if office.label %}<p class="text-muted">{{ office.label }}</p>{% endif %}
+        {% if office.address %}<p>{{ office.address }}</p>{% endif %}
+        {% if office.phone %}<p>Tel: {{ office.phone }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

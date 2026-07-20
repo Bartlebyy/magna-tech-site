@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>{{ company.shortName }}</h4>
+        <p>
+          {{ company.address.street }}<br>
+          {{ company.address.city }}, {{ company.address.region }} {{ company.address.postalCode }} {{ company.address.country }}
+        </p>
+        <p>
+          Tel: <a href="tel:{{ company.phone }}">{{ company.phoneDisplay }}</a><br>
+          Email: <a href="mailto:{{ company.email }}">{{ company.email }}</a>
+        </p>
+        <p class="text-muted">Office hours: {{ company.hours }}</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <p>
+          <a href="/about/">About Us</a><br>
+          <a href="/solutions/">Solutions</a><br>
+          <a href="/services/">Services</a><br>
+          <a href="/portfolio/">Portfolio</a><br>
+          <a href="/products/">Products</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop &amp; Partners</h4>
+        <p>
+          <a href="{{ company.domains.store }}">mteworld.com</a> — online catalog<br>
+          <a href="{{ company.domains.vintage }}">Vintage &amp; legacy equipment</a> (eBay)<br>
+          <a href="{{ company.domains.partnerRu }}">magna-tech.org</a> — Magna-Tech Russia (independent partner)
+        </p>
+      </div>
+
+      <div>
+        <h4>Related Businesses</h4>
+        <p>
+          <a href="http://www.continentalfilmlab.com">Continental Film &amp; Digital Labs</a><br>
+          <a href="http://www.gablescinema.com">Coral Gables Art Cinema</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="{{ company.social.facebook }}">Facebook</a>
+        <a href="{{ company.social.linkedin }}">LinkedIn</a>
+      </div>
+      <div>&copy; {{ "now" | year }} {{ company.name }}. All rights reserved.</div>
+    </div>
+  </div>
+</footer>

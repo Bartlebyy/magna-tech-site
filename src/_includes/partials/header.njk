@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">
+      MAGNA<span>-</span>TECH
+      <small>Electronic Co. &middot; Since {{ company.founded }}</small>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+      Menu
+    </button>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <ul id="primary-menu">
+        {% for item in nav.primary %}
+        <li class="{% if item.children %}has-children{% endif %}">
+          <a href="{{ item.href }}">{{ item.label }}</a>
+          {% if item.children %}
+          <ul class="submenu">
+            {% for child in item.children %}
+            <li><a href="{{ child.href }}">{{ child.label }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

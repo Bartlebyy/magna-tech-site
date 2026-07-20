@@ -1,0 +1,26 @@
+{
+  "needsVerification": true,
+  "verificationNote": "These entries were reconstructed from a third-party Oscar-nominations database and a German-language Wikipedia article, cross-checked against each other. Neither is the Academy's own site. D-014 requires checking oscars.org directly before this page is published \u2014 do not treat this file as launch-ready.",
+  "citations": [
+    {
+      "year": 1974,
+      "recipient": "Magna-Tech Electronic Co., Inc.",
+      "citation": "For the engineering and development of a high-speed re-recording system for motion picture production.",
+      "type": "Scientific/Technical Award (Academy Award for Technical Achievement)",
+      "sources": ["atogt.com Oscar nominations-by-category database", "German Wikipedia, \u201eMagna-Tech Electronic Co., Inc.\u201c"]
+    },
+    {
+      "year": 1990,
+      "recipient": "Magna-Tech Electronic Company",
+      "citation": "For the introduction of the first remotely controlled Advance/Retard function for magnetic film sound dubbing.",
+      "type": "Scientific/Technical Award, presented March 3, 1990",
+      "sources": ["atogt.com Oscar nominations-by-category database"]
+    }
+  ],
+  "relatedIndividualAwards": {
+    "note": "These went to individuals associated with the company's early history, not to the company itself \u2014 keep the distinction clear on the page.",
+    "entries": [
+      { "year": 1970, "recipient": "Otto Popelka (co-founder)", "citation": "For the development of an Electronically Controlled Looping System." }
+    ]
+  }
+}

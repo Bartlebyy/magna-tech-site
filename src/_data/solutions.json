@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "cinemas",
+    "title": "Cinemas",
+    "metaDescription": "Digital and film cinema equipment, design, and installation for movie theaters, from single screens to multiplexes.",
+    "dek": "Projection, sound, and seating systems for movie theaters of any size.",
+    "body": [
+      "Magna-Tech supplies and installs digital (DCP) and analog (16/35/70mm) cinema projection and sound systems, and maintains an inventory of equipment available for short- and medium-term rental \u2014 useful for events, festivals, and temporary screens as well as permanent installations.",
+      "For new builds and renovations, MTE works from theatrical design through sourcing, logistics, and installation, so an operator can open on schedule and on budget."
+    ],
+    "hasRealCopy": true,
+    "image": "/img/solutions/cinemas-hero.jpg",
+    "imageAlt": "Cinema auditorium with digital projection and sound system"
+  },
+  {
+    "slug": "outdoor-cinemas",
+    "title": "Outdoor & Drive-In Cinemas",
+    "metaDescription": "Equipment and design for drive-in theaters, pop-up screens, and outdoor cinema events.",
+    "dek": "Projection and sound systems built for open-air and drive-in screenings.",
+    "body": [
+      "Outdoor screenings pair well with other on-site activity \u2014 festivals, markets, and concession sales \u2014 and can be set up in almost any open space: a lot next to an existing business, a park, or a purpose-built drive-in.",
+      "A typical outdoor system combines a projector-and-screen pair (or an LED screen), a DCI-compliant media server or standard media player, a sound processor, and accessible controls. Magna-Tech specs and supplies each component and can advise on site layout, power, and accessibility for guests."
+    ],
+    "hasRealCopy": true,
+    "image": "/img/solutions/drive-in-hero.jpg",
+    "imageAlt": "Drive-in cinema screen at dusk"
+  },
+  {
+    "slug": "corporate",
+    "title": "Corporate",
+    "metaDescription": "AV systems for corporate boardrooms, conference centers, and briefing rooms.",
+    "dek": "Presentation and conferencing systems for corporate spaces.",
+    "body": [
+      "MTE designs and installs AV systems for boardrooms, conference centers, and briefing rooms \u2014 video conferencing, presentation displays, and control systems that a non-technical staff member can run day to day."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "cruise-ships",
+    "title": "Cruise Ships",
+    "metaDescription": "Cinema and AV equipment sized and specified for shipboard installation.",
+    "dek": "Cinema and entertainment AV systems built for the marine environment.",
+    "body": [
+      "Shipboard cinemas and entertainment spaces have constraints landside venues don't: space, weight, power, and vibration. MTE specifies projection, sound, and display equipment suited to marine installation and coordinates with a vessel's build or refit schedule."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "educational-facilities",
+    "title": "Educational Facilities",
+    "metaDescription": "AV, projection, and planetarium equipment for schools, colleges, and universities.",
+    "dek": "Classroom, auditorium, and planetarium systems for schools and universities.",
+    "body": [
+      "From lecture-hall projection to full planetarium domes, Magna-Tech has supplied AV and projection systems to university auditoriums, student union theaters, and planetariums at colleges and high schools across the US."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "government",
+    "title": "Government & Military",
+    "metaDescription": "Briefing room and auditorium AV systems for government and military facilities.",
+    "dek": "Briefing rooms, auditoriums, and training facilities for government and military clients.",
+    "body": [
+      "MTE has supplied briefing-room and auditorium AV systems to U.S. military and government facilities, including installations for the armed services and federal agencies. Procurement requirements for this sector can differ from commercial work \u2014 contact us to discuss your agency's specifications."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "houses-of-worship",
+    "title": "Houses of Worship",
+    "metaDescription": "Sound, video, and presentation systems for churches, synagogues, and other worship spaces.",
+    "dek": "Sound and video systems for congregations of any size.",
+    "body": [
+      "MTE designs sound reinforcement and video/presentation systems for congregations, sized to the room and the service \u2014 from a single sanctuary sound system to multi-room AV with overflow video."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "control-rooms",
+    "title": "Control Rooms",
+    "metaDescription": "Control room and monitoring AV systems for broadcast, security, and operations centers.",
+    "dek": "Multi-source display and control systems for operations and monitoring centers.",
+    "body": [
+      "For control rooms and operations centers, MTE specifies video wall, multi-source switching, and control systems designed for reliability and long operating hours."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "planetariums",
+    "title": "Planetariums",
+    "metaDescription": "Digital planetarium projection systems for museums, science centers, and universities.",
+    "dek": "Full-dome digital projection systems for museums, science centers, and universities.",
+    "body": [
+      "Magna-Tech has supplied and installed digital planetarium systems \u2014 including Konica Minolta MediaGlobe projectors and full-dome surround sound \u2014 at science museums and university planetariums across the United States, from initial dome design through commissioning."
+    ],
+    "hasRealCopy": true,
+    "image": "/img/solutions/planetarium-hero.jpg",
+    "imageAlt": "Planetarium dome interior with digital projection"
+  },
+  {
+    "slug": "entertainment",
+    "title": "Entertainment",
+    "metaDescription": "AV and projection systems for entertainment venues, visitor centers, and attractions.",
+    "dek": "Projection and AV systems for visitor centers, attractions, and entertainment venues.",
+    "body": [
+      "MTE has equipped visitor centers, museums, and entertainment venues with everything from single-screen projection to synchronized multi-projector and 4K stacked systems."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "healthcare",
+    "title": "Health Care",
+    "metaDescription": "AV systems for hospital auditoriums, training rooms, and patient-facing displays.",
+    "dek": "Presentation and training-room AV systems for healthcare facilities.",
+    "body": [
+      "MTE supplies AV systems for hospital and healthcare-facility auditoriums, training rooms, and patient-facing displays."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "shopping-malls",
+    "title": "Shopping Malls",
+    "metaDescription": "Digital signage and multimedia advertising systems for retail and shopping centers.",
+    "dek": "Digital signage and multimedia systems for retail environments.",
+    "body": [
+      "For shopping centers and retail environments, MTE designs internal and external multimedia advertising displays and digital signage systems."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "sport-venues",
+    "title": "Sport Venues",
+    "metaDescription": "Video display and sound systems for stadiums and sports arenas.",
+    "dek": "Video board and sound systems for stadiums and arenas.",
+    "body": [
+      "MTE has provided video display and sound systems for stadiums and sports arenas, sized to the venue and viewing distances."
+    ],
+    "hasRealCopy": false
+  },
+  {
+    "slug": "performing-arts-theaters",
+    "title": "Performing Arts Theaters",
+    "metaDescription": "Projection, sound, and stage AV systems for performing arts theaters and cultural centers.",
+    "dek": "Projection, sound, and stage systems for live-performance venues.",
+    "body": [
+      "MTE has equipped historic and modern performing-arts theaters with projection, seating, and sound systems, including work at the Colony Theatre and Olympia Theater (Gusman Cultural Center) in Miami."
+    ],
+    "hasRealCopy": true
+  },
+  {
+    "slug": "museums",
+    "title": "Museums",
+    "metaDescription": "AV, projection, and planetarium systems for museums and science centers.",
+    "dek": "Auditorium, exhibit, and planetarium AV systems for museums.",
+    "body": [
+      "From auditorium projection to dedicated planetarium domes, MTE has worked with museums and science centers including the American Museum of Natural History and the Morikami Museum on exhibit and auditorium AV systems."
+    ],
+    "hasRealCopy": true
+  }
+]

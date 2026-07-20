@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: "Become a Partner"
+description: "Magna-Tech Electronic Co.'s worldwide partner program for distributors and agents in the cinema and AV equipment market."
+permalink: "/partnership/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Partnership</p>
+    <h1>Magna-Tech Welcomes New Partners</h1>
+    <p class="dek">
+      We run a worldwide partner program for companies and individual entrepreneurs who want to
+      take part in our cross-channel equipment and services distribution network. We believe the
+      partnership program is key to our mutual success.
+    </p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap grid" style="grid-template-columns: 1fr 1fr;">
+    <div class="card">
+      <h3>What We Provide</h3>
+      <ul>
+        <li>Internships at our worldwide offices, on a volunteer basis</li>
+        <li>Cooperation with our full network of partners and agents worldwide</li>
+        <li>A recognized international brand name</li>
+        <li>Market experience and marketing assets</li>
+        <li>Technical and spare-parts support</li>
+        <li>Product supply</li>
+        <li>Consulting, training, and education</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>What We’re Looking For</h3>
+      <ul>
+        <li>Knowledge of your local market</li>
+        <li>Willingness to learn and share information</li>
+        <li>Potential for growth</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p style="margin-top:2rem;">
+      Tell us about your business and market — it's fine if you don't have every answer yet.
+      Send us as much as you can and we'll follow up.
+    </p>
+
+    <form class="contact-form" name="partner-application" method="POST" data-netlify="true"
+      data-netlify-honeypot="bot-field" action="/contact/thank-you/">
+      <input type="hidden" name="form-name" value="partner-application">
+      <p class="honeypot-field"><label>Don’t fill this out: <input name="bot-field"></label></p>
+
+      <div class="form-row"><label for="p-name">Your name*</label><input type="text" id="p-name" name="name" required></div>
+      <div class="form-row"><label for="p-email">Your email*</label><input type="email" id="p-email" name="email" required></div>
+      <div class="form-row"><label for="p-phone">Your phone</label><input type="tel" id="p-phone" name="phone"></div>
+      <div class="form-row"><label for="p-website">Does your company have a website?</label><input type="url" id="p-website" name="website"></div>
+      <div class="form-row"><label for="p-market">What is your market, and its geographic area?</label><textarea id="p-market" name="market"></textarea></div>
+      <div class="form-row"><label for="p-org">Your organization: when did you start, how many people, and what's your main business?</label><textarea id="p-org" name="org"></textarea></div>
+      <div class="form-row"><label for="p-projects">Describe the projects you've recently been involved in</label><textarea id="p-projects" name="projects"></textarea></div>
+      <div class="form-row"><label for="p-message">Anything else we should know?</label><textarea id="p-message" name="message"></textarea></div>
+
+      <button type="submit" class="btn">Send Application</button>
+    </form>
+  </div>
+</section>

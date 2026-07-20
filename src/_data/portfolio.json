@@ -1,0 +1,27 @@
+{
+  "_note": "The current site lists 200+ projects, heavily weighted toward Russian regional cinemas from the MTE Russia partnership era. This is a curated sample emphasizing variety and recognizable institutions. Confirm with the client which named clients (studios, museums, government bodies) are still comfortable being listed publicly \u2014 see open question Q-05.",
+  "entries": [
+    { "name": "American Museum of Natural History", "category": "Museums", "location": "New York, NY", "about": "Dual stacked 4K digital cinema projection system with Dolby 3D and a Qube 4K sync server." },
+    { "name": "The Coral Gables Art Cinema", "category": "Cinemas", "location": "Coral Gables, FL", "about": "Turn-key cinema solution: projection, sound, POS ticketing, interior design, screen, and seating." },
+    { "name": "Kimmel Center", "category": "Performing Arts", "location": "Philadelphia, PA", "about": "Barco DP4K-32B 4K digital projection package." },
+    { "name": "The Mariners' Museum and Park", "category": "Museums", "location": "Newport News, VA", "about": "Barco digital projection system for America's National Maritime Museum." },
+    { "name": "Morikami Museum", "category": "Museums", "location": "Delray Beach, FL", "about": "Auditorium digital projection, control, and lighting system." },
+    { "name": "Tellus Science Museum", "category": "Planetariums", "location": "Cartersville, GA", "about": "Konica Minolta MediaGlobe III digital planetarium system." },
+    { "name": "Memphis Pink Palace Museum / Sharpe Planetarium", "category": "Planetariums", "location": "Memphis, TN", "about": "Super MediaGlobe II digital planetarium system, dome, and surround sound." },
+    { "name": "Furman University (Timmons Planetarium)", "category": "Planetariums", "location": "Greenville, SC", "about": "Konica Minolta digital planetarium system." },
+    { "name": "Triton College (Cernan Earth & Space Center)", "category": "Planetariums", "location": "River Grove, IL", "about": "Super MediaGlobe II digital planetarium system." },
+    { "name": "US Navy Motion Picture Service", "category": "Government & Military", "location": "USA", "about": "Multiple projection installations." },
+    { "name": "U.S. Army, Ft. Monroe", "category": "Government & Military", "location": "Fort Monroe, VA", "about": "Briefing room AV solution." },
+    { "name": "The National Archives of the United States", "category": "Government & Military", "location": "Atlanta, GA", "about": "Auditorium front-end AV system." },
+    { "name": "US Embassy, Afghanistan", "category": "Government & Military", "location": "Kabul, Afghanistan", "about": "Christie CP4220 4K cinema projection system." },
+    { "name": "University of Miami (Beaumont Lecture Hall)", "category": "Education", "location": "Miami, FL", "about": "Original 35mm projection converted to 4K digital." },
+    { "name": "University of Wisconsin Student Union Theatre", "category": "Education", "location": "Madison, WI", "about": "Projection and curtain system." },
+    { "name": "Fusion Superplex", "category": "Cinemas", "location": "Nassau, Bahamas", "about": "9-auditorium complex with IMAX and 4DX; architectural design, equipment, and installation." },
+    { "name": "Cinergy Cinemas", "category": "Cinemas", "location": "Dallas / Midland, TX", "about": "Christie Digital projection and a full Dolby Atmos sound system for an 11-plex, plus two more Texas complexes." },
+    { "name": "Vue Cinemas", "category": "Cinemas", "location": "London, UK", "about": "Over 250 Dolby audio processor systems supplied." },
+    { "name": "Top Rank Cinemas", "category": "Cinemas", "location": "Lima, Peru", "about": "12 Barco digital cinema systems supplied and installed." },
+    { "name": "Colony Theatre for the Performing Arts", "category": "Performing Arts", "location": "Miami Beach, FL", "about": "Projection system." },
+    { "name": "Olympia Theater (Gusman Cultural Center)", "category": "Performing Arts", "location": "Miami, FL", "about": "Digital projection system for the historic downtown Miami venue." },
+    { "name": "City of Miami Tower Theatre", "category": "Cinemas", "location": "Miami, FL", "about": "MTE-operated historic cinema; projection system." }
+  ]
+}

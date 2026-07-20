@@ -1,0 +1,160 @@
+{
+  "_note": "Verified: false means this entry is carried over from the current site and needs a yes/still-active check before launch (open question Q-03 in the decision log). Fax numbers were dropped site-wide per D-007, except procurement contacts that may still require fax \u2014 flag if so.",
+  "offices": [
+    {
+      "id": "usa-hq",
+      "type": "office",
+      "name": "Magna-Tech Electronic USA",
+      "label": "Miami, FL (Headquarters)",
+      "address": "8101 NW 33rd Street, Doral, FL 33122, USA",
+      "phone": "(305) 573-7339",
+      "email": "digital@myiceco.com",
+      "verified": true
+    },
+    {
+      "id": "usa-atlanta",
+      "type": "office",
+      "name": "Magna-Tech Electronic USA",
+      "label": "Atlanta, GA",
+      "address": "5886 Dodgen Road SW, Mableton, GA 30126",
+      "phone": "(404) 305-0797",
+      "verified": false
+    },
+    {
+      "id": "canada",
+      "type": "office",
+      "name": "Magna-Tech Electronic Canada",
+      "label": "Richmond Hill, Ontario",
+      "address": "36 Westbury Crt, Richmond Hill, Ontario, Canada L4S 2L2",
+      "contact": "Evgueni Rogozin",
+      "phone": "+1 647 542 8788",
+      "verified": false
+    },
+    {
+      "id": "israel",
+      "type": "office",
+      "name": "Magna-Tech Electronic Israel",
+      "label": "Bat Yam",
+      "address": "Abba Berdichev 8, Bat Yam 5931421, Israel",
+      "phone": "+972 50 964 0332",
+      "verified": false
+    },
+    {
+      "id": "middle-east",
+      "type": "office",
+      "name": "Magna-Tech Middle East",
+      "label": "Lebanon, UAE, Jordan, Egypt",
+      "contact": "Tony Habib",
+      "phone": "+971 4 224 7484",
+      "verified": false
+    },
+    {
+      "id": "saudi",
+      "type": "office",
+      "name": "MTE / Audio Visual Est.",
+      "label": "Dammam, Saudi Arabia",
+      "address": "Jarir Plaza, Muqarabat District, Dammam, Saudi Arabia",
+      "contact": "Shaukat Mehbob",
+      "phone": "+966 3 840 9000",
+      "verified": false
+    },
+    {
+      "id": "russia-partner",
+      "type": "partner",
+      "name": "Magna-Tech Russia",
+      "label": "Ekaterinburg (independent partner, not translated/mirrored on this site)",
+      "address": "Lenina 50zh, office 245, Ekaterinburg, Russia",
+      "contact": "Stanislav Rogozin",
+      "phone": "+7 912 249 1086",
+      "website": "http://www.magna-tech.org",
+      "verified": true,
+      "note": "Per D-003: linked as a partner, included in schema sameAs, but not given an hreflang pairing since magna-tech.org is not a translated mirror of this site."
+    },
+    {
+      "id": "dubai",
+      "type": "agent",
+      "name": "Dubai\u2013UAE",
+      "contact": "Fadi Mihu (CEO)",
+      "phone": "+971 4 282 2296",
+      "verified": false
+    },
+    {
+      "id": "uk-agent",
+      "type": "agent",
+      "name": "Simon Baxter",
+      "label": "Epsom, Surrey, UK",
+      "address": "20 Poplar Close, Epsom, Surrey, KT17 3LH, UK",
+      "verified": false
+    },
+    {
+      "id": "bahrain-agent",
+      "type": "agent",
+      "name": "Cinelite",
+      "label": "Manama, Bahrain",
+      "verified": false
+    },
+    {
+      "id": "malaysia-agent",
+      "type": "agent",
+      "name": "Trans Asian & American Film & Cinema Equipment",
+      "label": "Ipoh, Malaysia",
+      "contact": "Alexander Sange",
+      "verified": false
+    },
+    {
+      "id": "brazil-agent",
+      "type": "agent",
+      "name": "Telem",
+      "label": "S\u00e3o Paulo, Brazil",
+      "contact": "Mauro Andrade",
+      "verified": false
+    },
+    {
+      "id": "india-agent",
+      "type": "agent",
+      "name": "A.V.M. Studios",
+      "label": "India",
+      "contact": "S.R.K. Menon",
+      "verified": false
+    },
+    {
+      "id": "atlanta-agent",
+      "type": "agent",
+      "name": "Cinevision",
+      "label": "Atlanta, GA",
+      "contact": "Steve Newton",
+      "verified": false
+    },
+    {
+      "id": "taiwan-agent",
+      "type": "agent",
+      "name": "Multirich Enterprises",
+      "label": "Taiwan",
+      "contact": "Toyo Liu",
+      "verified": false
+    },
+    {
+      "id": "china-agent",
+      "type": "agent",
+      "name": "CFEC",
+      "label": "Beijing, China",
+      "contact": "Stephen Tang",
+      "verified": false
+    },
+    {
+      "id": "trinidad-agent",
+      "type": "agent",
+      "name": "Roger Wilson",
+      "label": "Trinidad, W.I.",
+      "verified": false
+    },
+    {
+      "id": "argentina-agent",
+      "type": "agent",
+      "name": "Magna-Tech Argentina",
+      "label": "Buenos Aires, Argentina",
+      "contact": "Ramiro Nogues / Luis Ariel Nogues",
+      "verified": false
+    }
+  ]
+}

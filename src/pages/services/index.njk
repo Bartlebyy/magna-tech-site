@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: "Services"
+description: "Installation, rental, architectural design, post-production, and consulting services from Magna-Tech Electronic Co."
+permalink: "/services/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Services</p>
+    <h1>Services</h1>
+    <p class="dek">We offer a total solution for a state-of-the-art digital or film-based cinema and AV space.</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <img src="/img/services/services-hero.jpg" alt="Magna-Tech technicians at work" class="page-photo">
+  </div>
+  <div class="wrap grid">
+    {% for s in services %}
+    <div class="card">
+      <a class="card-link" href="/services/{{ s.slug }}/"><h3>{{ s.title }}</h3></a>
+      <p>{{ s.dek }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="wrap">
+    <p class="text-muted">
+      Need equipment financing? We can arrange it — ask us when you reach out, no separate page needed.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: "Portfolio"
+description: "A sample of completed cinema, museum, planetarium, and government projects by Magna-Tech Electronic Co."
+permalink: "/portfolio/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Portfolio</p>
+    <h1>Portfolio</h1>
+    <p class="dek">A sample of completed projects across cinemas, museums, planetariums, education, and government.</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <img src="/img/portfolio/team-photo.jpg" alt="Magna-Tech team at a project site" class="team-photo">
+    <div class="portfolio-grid">
+      {% for p in portfolio.entries %}
+      <div class="portfolio-card">
+        <span class="tag">{{ p.category }}</span>
+        <h3>{{ p.name }}</h3>
+        <p class="loc">{{ p.location }}</p>
+        <p>{{ p.about }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="text-muted" style="margin-top:2rem;">
+      This is a representative sample, not the complete project list. We have hundreds more,
+      many for cinemas across Russia and the CIS through our regional partner network —
+      ask us about a specific region or venue type.
+    </p>
+    <p><a class="btn" href="/contact/">Discuss Your Project</a></p>
+  </div>
+</section>

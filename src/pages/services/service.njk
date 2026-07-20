@@ -1,0 +1,30 @@
+---
+layout: base.njk
+pagination:
+  data: services
+  size: 1
+  alias: item
+permalink: "/services/{{ item.slug }}/"
+eleventyComputed:
+  title: "{{ item.title }}"
+  description: "{{ item.metaDescription }}"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / {{ item.title }}</p>
+    <h1>{{ item.title }}</h1>
+    <p class="dek">{{ item.dek }}</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    {% if item.image %}
+    <img src="{{ item.image }}" alt="{{ item.imageAlt or item.title }}" class="banner-photo">
+    {% endif %}
+    {% for para in item.body %}
+    <p>{{ para }}</p>
+    {% endfor %}
+    <p><a class="btn" href="/contact/">Ask About This</a></p>
+  </div>
+</section>

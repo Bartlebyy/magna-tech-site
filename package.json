@@ -1,0 +1,17 @@
+{
+  "name": "magna-tech-site",
+  "version": "1.0.0",
+  "description": "Magna-Tech Electronic Co. website - Eleventy static site",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

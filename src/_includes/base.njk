@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} | {{ company.shortName }} — {{ company.tagline }}</title>
+<meta name="description" content="{{ description or company.description }}">
+<link rel="canonical" href="{{ company.domains.primary }}{{ page.url }}">
+{% if noIndex %}<meta name="robots" content="noindex,follow">{% endif %}
+
+<!-- Open Graph / Twitter -->
+<meta property="og:site_name" content="{{ company.shortName }}">
+<meta property="og:title" content="{{ title }} | {{ company.shortName }}">
+<meta property="og:description" content="{{ description or company.description }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:url" content="{{ company.domains.primary }}{{ page.url }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+{% include "partials/schema.njk" %}
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ company.gtmId }}');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ company.gtmId }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+{% include "partials/header.njk" %}
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
+
+<script>
+  var toggle = document.querySelector('.menu-toggle');
+  var nav = document.querySelector('.primary-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+</script>
+</body>
+</html>

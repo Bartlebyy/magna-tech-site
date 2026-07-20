@@ -1,0 +1,51 @@
+# Solutions: old WordPress paths -> new consolidated /solutions/[name]/ structure
+/solution/                                          /solutions/                              301
+/solution/cinemas/                                  /solutions/cinemas/                      301
+/solutions_page/                                    /solutions/                              301
+/solutions_page/corporate/                          /solutions/corporate/                    301
+/solutions_page/cruise-ship/                        /solutions/cruise-ships/                 301
+/solutions_page/educational_facilities/             /solutions/educational-facilities/       301
+/solutions_page/goverment/                          /solutions/government/                   301
+/solutions_page/house-of-worship/                   /solutions/houses-of-worship/            301
+/solutions_page/control-rooms/                      /solutions/control-rooms/                301
+/solutions_page/planetarium-museum/                 /solutions/planetariums/                 301
+/solutions_page/entertainment/                      /solutions/entertainment/                301
+/solutions_page/healthcare/                         /solutions/healthcare/                   301
+/solutions_page/shopping-malls/                     /solutions/shopping-malls/               301
+/solutions_page/sport-venues/                       /solutions/sport-venues/                 301
+/solutions_page/performing-theaters/                /solutions/performing-arts-theaters/     301
+/solutions_page/museums/                             /solutions/museums/                      301
+/solutions_page/outdoor-cinemas/                    /solutions/outdoor-cinemas/               301
+# The old Drive-In Cinemas slug contains an invisible zero-width character (U+200B) before "drive-in-cinemas"
+/solutions_page/%e2%80%8bdrive-in-cinemas/          /solutions/outdoor-cinemas/               301
+
+# Services: typo fix and consolidation
+/services/rental-servises/                          /services/rental-services/                301
+/services/financial-services/                       /services/                                301
+
+# About: retired / merged pages
+/about-us/on-line-booth/                            /solutions/                                301
+/about-us/mte-electronic-magazine/                  /about/                                    301
+/about-us/downloads/                                /about/                                    301
+/about-us/                                          /about/                                     301
+/about-us/about-mte/                                /about/about-mte/                          301
+/about-us/key-staff/                                /about/key-staff/                          301
+/about-us/awards/                                   /about/awards/                             301
+/about-us/affiliated-companies/                     /about/affiliated-companies/               301
+/about-us/terms-and-conditions-of-sale/             /about/terms-and-conditions-of-sale/       301
+/about-us/our-guidelines/                           /about/about-mte/                          301
+/category/photos/                                   /portfolio/                                 301
+/category/articles/                                 /about/about-mte/                          301
+/articles                                            /about/about-mte/                          301
+
+# Partnership: slug typo fix
+/partnership/our-offices-and-agences/               /partnership/our-offices-and-agents/       301
+
+# Contact / homepage: the old root URL served Contact, not a homepage (Decision D-016)
+/contact-us/                                        /contact/                                   301
+/sent/                                               /contact/thank-you/                        301
+/main-page/                                          /                                           301
+/cinema-architectural-design/                       /services/architectural-design/            301
+
+# Catalog stays on mteworld.com (Decision D-003) - point old on-site catalog paths there
+/catalog/*                                           https://www.mteworld.com/                  301

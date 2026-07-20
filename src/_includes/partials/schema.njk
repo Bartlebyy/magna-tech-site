@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ company.name }}",
+  "alternateName": "{{ company.abbreviation }}",
+  "url": "{{ company.domains.primary }}",
+  "foundingDate": "{{ company.founded }}",
+  "description": "{{ company.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ company.address.street }}",
+    "addressLocality": "{{ company.address.city }}",
+    "addressRegion": "{{ company.address.region }}",
+    "postalCode": "{{ company.address.postalCode }}",
+    "addressCountry": "{{ company.address.country }}"
+  },
+  "telephone": "{{ company.phone }}",
+  "email": "{{ company.email }}",
+  "sameAs": [
+    "{{ company.social.facebook }}",
+    "{{ company.social.linkedin }}",
+    "{{ company.domains.store }}",
+    "{{ company.domains.partnerRu }}",
+    "{{ company.domains.vintage }}"
+  ]
+}
+</script>

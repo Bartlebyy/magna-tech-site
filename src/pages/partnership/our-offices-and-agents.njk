@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: "Our Offices and Agents"
+description: "Magna-Tech Electronic Co.'s worldwide network of offices, agents, and partners."
+permalink: "/partnership/our-offices-and-agents/"
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/partnership/">Partnership</a> / Our Offices and Agents</p>
+    <h1>Our Offices and Agents</h1>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Offices</h2>
+    <div class="office-grid">
+      {% for office in offices.offices %}
+      {% if office.type == "office" or office.type == "partner" %}
+      <div class="office-card">
+        <span class="kind">{{ office.type }}</span>
+        <h3>{{ office.name }}</h3>
+        {% if office.label %}<p class="text-muted">{{ office.label }}</p>{% endif %}
+        {% if office.address %}<p>{{ office.address }}</p>{% endif %}
+        {% if office.contact %}<p>Contact: {{ office.contact }}</p>{% endif %}
+        {% if office.phone %}<p>Tel: {{ office.phone }}</p>{% endif %}
+        {% if office.website %}<p><a href="{{ office.website }}">{{ office.website }}</a></p>{% endif %}
+        {% if office.note %}<p class="text-muted" style="font-size:0.85rem;">{{ office.note }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="sprocket-rule" role="presentation"></div>
+
+    <h2>Agents</h2>
+    <div class="office-grid">
+      {% for office in offices.offices %}
+      {% if office.type == "agent" %}
+      <div class="office-card">
+        <span class="kind">{{ office.type }}</span>
+        <h3>{{ office.name }}</h3>
+        {% if office.label %}<p class="text-muted">{{ office.label }}</p>{% endif %}
+        {% if office.contact %}<p>Contact: {{ office.contact }}</p>{% endif %}
+        {% if office.phone %}<p>Tel: {{ office.phone }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <p class="text-muted" style="margin-top:2rem; font-size:0.85rem;">
+      This list is carried over from the current site and needs a still-active check office by
+      office before launch (some contacts here haven’t been confirmed).
+    </p>
+
+    <p><a class="btn" href="/partnership/">Become a Partner</a></p>
+  </div>
+</section>

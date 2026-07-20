@@ -1,0 +1,49 @@
+<form
+  class="contact-form"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  action="/contact/thank-you/"
+>
+  <input type="hidden" name="form-name" value="contact">
+  <p class="honeypot-field">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+
+  <div class="form-row">
+    <label for="name">Your name*</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-row">
+    <label for="email">Your email*</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="region">Which office should this go to?*</label>
+    <select id="region" name="region" required>
+      <option value="">Select an office…</option>
+      {% for office in offices.offices %}
+        {% if office.type == "office" %}
+        <option value="{{ office.name }} — {{ office.label }}">{{ office.name }} — {{ office.label }}</option>
+        {% endif %}
+      {% endfor %}
+      <option value="Not sure / general inquiry">Not sure / general inquiry</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject">
+  </div>
+
+  <div class="form-row">
+    <label for="message">Message*</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+  <p class="form-note">We typically reply within one business day during office hours ({{ company.hours }}).</p>
+</form>

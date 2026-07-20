@@ -14,34 +14,119 @@ permalink: "/about/awards/"
 
 <section class="block">
   <div class="wrap">
-    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 2rem;">
-      {% for n in range(1, 8) %}
-      <img src="/img/awards/award-{{ n }}.jpg" alt="Magna-Tech Academy Award certificate, photo {{ n }}" loading="lazy" style="border:1px solid #ddd4bf;">
+
+    <h2>Academy Scientific/Technical Awards</h2>
+    <p class="text-muted">{{ awards.companyAwards.note }}</p>
+    <div class="award-list">
+      {% for c in awards.companyAwards.citations %}
+      <div class="award-item">
+        {% if c.image %}
+        <a href="#award-photo-{{ loop.index }}" class="award-thumb-link">
+          <img src="{{ c.image }}" alt="{{ c.imageAlt }}" loading="lazy" class="award-thumb">
+        </a>
+        {% else %}
+        <div class="award-thumb award-thumb--none" aria-hidden="true">No photo on file</div>
+        {% endif %}
+        <div class="award-detail">
+          <span class="badge">{{ c.year }}</span>
+          <h3>{{ c.type }}</h3>
+          <p><strong>{{ c.recipient }}</strong></p>
+          <p>&ldquo;{{ c.citation }}&rdquo;</p>
+        </div>
+      </div>
+      {% if c.image %}
+      <div class="lightbox" id="award-photo-{{ loop.index }}">
+        <a href="#" class="lightbox-backdrop" aria-label="Close"></a>
+        <figure class="lightbox-content">
+          <img src="{{ c.image }}" alt="{{ c.imageAlt }}">
+          <figcaption>{{ c.type }} — {{ c.recipient }}</figcaption>
+        </figure>
+        <a href="#" class="lightbox-close" aria-label="Close">&times;</a>
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
 
-    {% for c in awards.citations %}
-    <div class="card" style="border-top-color: var(--brass); margin-bottom: 1.5rem;">
-      <span class="badge">{{ c.year }}</span>
-      <h3>{{ c.type }}</h3>
-      <p><strong>{{ c.recipient }}</strong></p>
-      <p>&ldquo;{{ c.citation }}&rdquo;</p>
+    <h2>Academy Certificate of Appreciation</h2>
+    <p class="text-muted">{{ awards.companyAppreciation.note }}</p>
+    <div class="award-list">
+      {% for c in awards.companyAppreciation.entries %}
+      <div class="award-item">
+        <a href="#award-photo-appreciation-{{ loop.index }}" class="award-thumb-link">
+          <img src="{{ c.image }}" alt="{{ c.imageAlt }}" loading="lazy" class="award-thumb">
+        </a>
+        <div class="award-detail">
+          <span class="badge">{{ c.year }}</span>
+          <h3>{{ c.type }}</h3>
+          <p><strong>{{ c.recipient }}</strong></p>
+          <p>&ldquo;{{ c.citation }}&rdquo;</p>
+        </div>
+      </div>
+      <div class="lightbox" id="award-photo-appreciation-{{ loop.index }}">
+        <a href="#" class="lightbox-backdrop" aria-label="Close"></a>
+        <figure class="lightbox-content">
+          <img src="{{ c.image }}" alt="{{ c.imageAlt }}">
+          <figcaption>{{ c.type }} — {{ c.recipient }}</figcaption>
+        </figure>
+        <a href="#" class="lightbox-close" aria-label="Close">&times;</a>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
 
-    {% if awards.relatedIndividualAwards.entries.length %}
     <h2>Related Awards to Company Founders</h2>
     <p class="text-muted">{{ awards.relatedIndividualAwards.note }}</p>
-    <ul>
+    <div class="award-list">
       {% for e in awards.relatedIndividualAwards.entries %}
-      <li><strong>{{ e.year }}</strong> — {{ e.recipient }}: &ldquo;{{ e.citation }}&rdquo;</li>
+      <div class="award-item">
+        <a href="#award-photo-founder-{{ loop.index }}" class="award-thumb-link">
+          <img src="{{ e.image }}" alt="{{ e.imageAlt }}" loading="lazy" class="award-thumb">
+        </a>
+        <div class="award-detail">
+          <span class="badge">{{ e.year }}</span>
+          <h3>{{ e.type }}</h3>
+          <p><strong>{{ e.recipient }}</strong></p>
+          <p>&ldquo;{{ e.citation }}&rdquo;</p>
+        </div>
+      </div>
+      <div class="lightbox" id="award-photo-founder-{{ loop.index }}">
+        <a href="#" class="lightbox-backdrop" aria-label="Close"></a>
+        <figure class="lightbox-content">
+          <img src="{{ e.image }}" alt="{{ e.imageAlt }}">
+          <figcaption>{{ e.type }} — {{ e.recipient }}</figcaption>
+        </figure>
+        <a href="#" class="lightbox-close" aria-label="Close">&times;</a>
+      </div>
       {% endfor %}
-    </ul>
-    {% endif %}
+    </div>
+
+    <h2>Affiliated Company Recognitions</h2>
+    <p class="text-muted">{{ awards.affiliateAwards.note }}</p>
+    <div class="award-list">
+      {% for e in awards.affiliateAwards.entries %}
+      <div class="award-item">
+        <a href="#award-photo-affiliate-{{ loop.index }}" class="award-thumb-link">
+          <img src="{{ e.image }}" alt="{{ e.imageAlt }}" loading="lazy" class="award-thumb">
+        </a>
+        <div class="award-detail">
+          {% if e.year %}<span class="badge">{{ e.year }}</span>{% endif %}
+          <h3>{{ e.type }}</h3>
+          <p><strong>{{ e.recipient }}</strong></p>
+          <p>&ldquo;{{ e.citation }}&rdquo;</p>
+        </div>
+      </div>
+      <div class="lightbox" id="award-photo-affiliate-{{ loop.index }}">
+        <a href="#" class="lightbox-backdrop" aria-label="Close"></a>
+        <figure class="lightbox-content">
+          <img src="{{ e.image }}" alt="{{ e.imageAlt }}">
+          <figcaption>{{ e.type }} — {{ e.recipient }}</figcaption>
+        </figure>
+        <a href="#" class="lightbox-close" aria-label="Close">&times;</a>
+      </div>
+      {% endfor %}
+    </div>
 
     <p class="text-muted" style="margin-top:2rem; font-size: 0.85rem;">
-      Sourced from Academy Scientific and Technical Awards records. If you have the original
-      certificates or photographs, we’d rather cite those directly — send them to
+      If you have the original certificates or photographs for the items above, we’d rather cite those directly — send them to
       <a href="mailto:{{ company.email }}">{{ company.email }}</a>.
     </p>
   </div>

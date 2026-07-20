@@ -321,4 +321,54 @@ form.contact-form { max-width: 640px; }
 .badge {
   display: inline-block; border: 1px solid var(--brass); color: var(--brass);
   font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2em 0.6em;
+  margin-bottom: 0.6em;
+}
+
+/* ---- Awards page ---- */
+.award-list { display: flex; flex-direction: column; gap: 1.2rem; margin: 1.5rem 0 3rem; }
+.award-item {
+  display: grid; grid-template-columns: 160px 1fr; gap: 1.5rem;
+  background: var(--white); border: 1px solid #ddd4bf; border-top: 4px solid var(--brass);
+  padding: 1.4rem;
+}
+.award-thumb-link { display: block; }
+.award-thumb {
+  width: 100%; height: 140px; object-fit: contain; background: var(--paper-dim);
+  border: 1px solid #ddd4bf; cursor: zoom-in;
+}
+.award-thumb--none {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  height: 140px; font-size: 0.75rem; color: var(--muted); border: 1px dashed #ddd4bf;
+  padding: 0.5em;
+}
+.award-detail h3 { margin-top: 0; margin-bottom: 0.3em; font-size: 1.05rem; }
+.award-detail p { margin: 0.4em 0; }
+
+@media (max-width: 560px) {
+  .award-item { grid-template-columns: 1fr; }
+  .award-thumb, .award-thumb--none { height: 200px; }
+}
+
+/* CSS-only lightbox: target the #award-photo-N anchor to reveal it. */
+.lightbox {
+  display: none; position: fixed; inset: 0; z-index: 100;
+  align-items: center; justify-content: center; padding: 2rem;
+}
+.lightbox:target { display: flex; }
+.lightbox-backdrop {
+  position: absolute; inset: 0; background: rgba(20, 17, 13, 0.88);
+}
+.lightbox-content {
+  position: relative; z-index: 1; margin: 0; max-width: min(90vw, 720px); text-align: center;
+}
+.lightbox-content img {
+  display: block; max-width: 100%; max-height: 80vh; margin: 0 auto;
+  border: 4px solid var(--white);
+}
+.lightbox-content figcaption {
+  color: var(--white); font-size: 0.9rem; margin-top: 0.8rem;
+}
+.lightbox-close {
+  position: absolute; top: 1rem; right: 1.5rem; z-index: 2;
+  color: var(--white); font-size: 2rem; line-height: 1; text-decoration: none;
 }

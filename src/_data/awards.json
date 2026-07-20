@@ -1,26 +1,86 @@
 {
-  "needsVerification": true,
-  "verificationNote": "These entries were reconstructed from a third-party Oscar-nominations database and a German-language Wikipedia article, cross-checked against each other. Neither is the Academy's own site. D-014 requires checking oscars.org directly before this page is published \u2014 do not treat this file as launch-ready.",
-  "citations": [
-    {
-      "year": 1974,
-      "recipient": "Magna-Tech Electronic Co., Inc.",
-      "citation": "For the engineering and development of a high-speed re-recording system for motion picture production.",
-      "type": "Scientific/Technical Award (Academy Award for Technical Achievement)",
-      "sources": ["atogt.com Oscar nominations-by-category database", "German Wikipedia, \u201eMagna-Tech Electronic Co., Inc.\u201c"]
-    },
-    {
-      "year": 1990,
-      "recipient": "Magna-Tech Electronic Company",
-      "citation": "For the introduction of the first remotely controlled Advance/Retard function for magnetic film sound dubbing.",
-      "type": "Scientific/Technical Award, presented March 3, 1990",
-      "sources": ["atogt.com Oscar nominations-by-category database"]
-    }
-  ],
-  "relatedIndividualAwards": {
-    "note": "These went to individuals associated with the company's early history, not to the company itself \u2014 keep the distinction clear on the page.",
+  "companyAwards": {
+    "note": "Academy Scientific/Technical Award citations reconstructed from a third-party Oscar-nominations database and a German-language Wikipedia article, cross-checked against each other. Neither is the Academy's own site — treat these two dates as unverified until confirmed against oscars.org.",
+    "needsVerification": true,
+    "citations": [
+      {
+        "year": 1974,
+        "recipient": "Magna-Tech Electronic Co., Inc.",
+        "citation": "For the engineering and development of a high-speed re-recording system for motion picture production.",
+        "type": "Scientific/Technical Award (Academy Award for Technical Achievement)",
+        "image": "/img/awards/award-1.jpg",
+        "imageAlt": "Academy Scientific and Technical Award trophy, presented to Magna-Tech Electronic Co."
+      },
+      {
+        "year": 1990,
+        "recipient": "Magna-Tech Electronic Company",
+        "citation": "For the introduction of the first remotely controlled Advance/Retard function for magnetic film sound dubbing.",
+        "type": "Scientific/Technical Award, presented March 3, 1990",
+        "image": null
+      }
+    ]
+  },
+  "companyAppreciation": {
+    "note": "A separate honor from the Scientific/Technical Awards above — recognition for supporting Academy facilities, not for an engineering achievement.",
     "entries": [
-      { "year": 1970, "recipient": "Otto Popelka (co-founder)", "citation": "For the development of an Electronically Controlled Looping System." }
+      {
+        "year": 1991,
+        "recipient": "Magna-Tech Electronic Company",
+        "citation": "In appreciation of its generous support in providing services to the Academy of Motion Picture Arts and Sciences and, especially, to the Samuel Goldwyn Theater and Academy Little Theater. Its expertise has been of special value to members of the Academy and others who rely upon the facilities of the Academy for optimum quality of motion picture presentation.",
+        "type": "Certificate of Appreciation, presented by the Academy Board of Governors, July 2, 1991",
+        "image": "/img/awards/award-3.jpg",
+        "imageAlt": "Academy of Motion Picture Arts and Sciences certificate of appreciation to Magna-Tech Electronic Company, 1991"
+      }
+    ]
+  },
+  "relatedIndividualAwards": {
+    "note": "This went to an individual associated with the company's early history, not to the company itself — keep the distinction clear on the page.",
+    "entries": [
+      {
+        "year": 1970,
+        "recipient": "Otto Popelka (co-founder)",
+        "citation": "For the development of an Electronically Controlled Looping System.",
+        "type": "Academy Citation, Class III Scientific or Technical Award, December 31, 1969",
+        "image": "/img/awards/award-2.jpg",
+        "imageAlt": "Academy Citation awarded to Otto Popelka of Magna-Tech Electronics Co., Inc., 1969"
+      }
+    ]
+  },
+  "affiliateAwards": {
+    "note": "Recognitions to Continental Film & Digital Labs, an MTE-affiliated company — a different honor from the Academy awards above.",
+    "entries": [
+      {
+        "year": 2008,
+        "recipient": "Continental Film & Digital Laboratories, Inc. — Orlando",
+        "citation": "For participating in the Kodak Color Survey.",
+        "type": "Laboratory Quality Assurance Program, Kodak",
+        "image": "/img/awards/award-4.jpg",
+        "imageAlt": "Kodak Laboratory Quality Assurance certificate, Continental Film & Digital Laboratories Orlando, 2008"
+      },
+      {
+        "year": 2009,
+        "recipient": "Continental Film & Digital Laboratories, Inc. — Miami",
+        "citation": "For participating in the Kodak Monthly Process Survey.",
+        "type": "Laboratory Quality Assurance Program, Kodak",
+        "image": "/img/awards/award-5.jpg",
+        "imageAlt": "Kodak Laboratory Quality Assurance certificate, Continental Film & Digital Laboratories Miami, 2009"
+      },
+      {
+        "year": null,
+        "recipient": "Continental Film Labs of Florida Inc.",
+        "citation": "Thanks for your support of the ASC Cinematographers' Awards.",
+        "type": "Sponsor recognition plaque, American Society of Cinematographers",
+        "image": "/img/awards/award-6.jpg",
+        "imageAlt": "ASC Cinematographers' Awards sponsor recognition plaque, Continental Film Labs of Florida"
+      },
+      {
+        "year": 1992,
+        "recipient": "Continental Film Labs of Florida Inc.",
+        "citation": "Thanks for your support of the 6th annual ASC Cinematographers' Awards.",
+        "type": "Sponsor recognition plaque, American Society of Cinematographers, 1992",
+        "image": "/img/awards/award-7.jpg",
+        "imageAlt": "6th annual ASC Cinematographers' Awards sponsor recognition plaque, Continental Film Labs of Florida, 1992"
+      }
     ]
   }
 }

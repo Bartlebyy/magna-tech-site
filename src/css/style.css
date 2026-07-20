@@ -189,9 +189,9 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
 .hero {
   background: var(--booth);
   color: var(--white);
-  padding: 3.5rem 0 3rem;
   border-bottom: 3px solid var(--red);
 }
+.hero > .wrap { padding: 3.5rem 0 3rem; }
 .hero .eyebrow {
   font-family: var(--font-display); text-transform: uppercase;
   color: var(--brass); letter-spacing: 0.08em; font-size: 0.9rem; margin-bottom: 0.6em;
@@ -199,6 +199,11 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
 .hero h1 { color: var(--white); max-width: 22ch; }
 .hero p.lede { max-width: 60ch; font-size: 1.15rem; color: #e6e0d2; }
 .hero .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+.hero-stats { background: rgba(0, 0, 0, 0.18); border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.hero-stats .stat-row { margin: 0; padding-top: 1.6rem; padding-bottom: 1.6rem; }
+.hero-stats .stat .num { color: var(--brass); }
+.hero-stats .stat .label { color: #cfc7b8; }
 
 /* ---- Buttons ---- */
 .btn {

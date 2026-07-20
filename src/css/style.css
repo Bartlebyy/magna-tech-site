@@ -211,7 +211,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
 }
 
 .hero-stats { background: #17140f; border-top: 1px solid rgba(255, 255, 255, 0.12); }
-.hero-stats .stat-row { margin: 0; padding-top: 1.6rem; padding-bottom: 1.6rem; gap: 3rem; }
+.hero-stats .stat-row { margin-top: 0; margin-bottom: 0; padding-top: 1.6rem; padding-bottom: 1.6rem; gap: 3rem; }
 .hero-stats .stat .num { color: var(--brass); }
 .hero-stats .stat .label { color: #cfc7b8; }
 @media (min-width: 640px) {
@@ -249,7 +249,7 @@ section.block { padding: 3rem 0; }
 .card a.card-link { text-decoration: none; color: inherit; }
 .card a.card-link:hover h3 { color: var(--red-dark); }
 
-.stat-row { display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0; }
+.stat-row { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; margin-bottom: 2rem; }
 .stat { min-width: 140px; }
 .stat .num { font-family: var(--font-display); font-size: 2.2rem; color: var(--red); display: block; }
 .stat .label { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }

@@ -1,7 +1,7 @@
 [
   { "name": "Steven H. Krams", "role": "President & CEO" },
   { "name": "Julio Urbay", "role": "International Sales & Marketing" },
-  { "name": "Stas Rogozin", "role": "Architectural Design & Development" },
+  { "name": "Stas Rogozin", "role": "Architectural Design & Development; Managing Director, MTE Russia & Business Development, MTE Worldwide" },
   { "name": "Vicki Amorosi", "role": "General Manager, Continental Film & Digital Labs" },
   { "name": "Dara Lewis", "role": "Sales & Consulting" },
   { "name": "Raymond Alvarino", "role": "Head of Digital Cinema Technical Support & Sales" },
@@ -10,6 +10,5 @@
   { "name": "Enrique Cardoso", "role": "Machine Shop Specialist" },
   { "name": "Merri Krams", "role": "eBay Sales & Logistics" },
   { "name": "Oscar Danilo Estrada", "role": "Technician - Vintage Equipment Restoration" },
-  { "name": "Stanislav Rogozin", "role": "Managing Director, MTE Russia & Business Development, MTE Worldwide" },
   { "name": "Samuel Sewell", "role": "Warehouse Manager / Driver" }
 ]
